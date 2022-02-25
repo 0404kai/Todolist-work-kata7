@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "45922fb6-ad8b-4377-ad0c-7cdf857f2d9a",
+		"name": "Todolist - heroku7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有資料",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-citadel-00714.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"fierce-citadel-00714",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆資料",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"今天要吃飯\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-citadel-00714.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"fierce-citadel-00714",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-citadel-00714.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"fierce-citadel-00714",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-citadel-00714.herokuapp.com/todos/",
+					"protocol": "https",
+					"host": [
+						"fierce-citadel-00714",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改單筆資料",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"今天要出門\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-citadel-00714.herokuapp.com/todos/",
+					"protocol": "https",
+					"host": [
+						"fierce-citadel-00714",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
